@@ -1,0 +1,252 @@
+.service dl{
+    display: grid;
+    column-gap: 50px;
+    justify-items: center;
+}
+.service h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 47%;
+}
+dt, dd{
+    font-size: 20px;
+}
+dt:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+dd:nth-child(2) {
+    grid-row: inherit;
+    grid-column: 1;
+}
+dt:nth-child(3) {
+    grid-row: 1;
+    grid-column: 2;
+}
+dd:nth-child(4) {
+    grid-row: inherit;
+    grid-column: 2;
+}
+dt:nth-child(5) {
+    grid-row: 1;
+    grid-column: 3;
+}
+dd:nth-child(6) {
+    grid-row: inherit;
+    grid-column: 3;
+}
+dt:nth-child(7) {
+    grid-row: 1;
+    grid-column: 4;
+}
+dd:nth-child(8) {
+    grid-row: inherit;
+    grid-column: inherit;
+}
+.service img{
+    grid-row: 1;
+    width: 100%;
+}
+.service dd {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: solid 2px rgb(255, 255, 255);
+    box-shadow: 3px 3px #00a075;
+    border-radius: 10px;
+}
+.qu h2{
+    font-size: 30px;
+    padding: 0 50px;
+    text-align: center;
+}
+.qu dd , .qu dt{
+    width: 100%;
+    padding-bottom: 20px;
+   text-align: left;
+    margin: auto;
+}
+.qu dl{
+    margin: 50px;
+    display: block;
+}
+
+.qu dd:nth-child(even){
+    border-bottom: 2px solid #00a075;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 700px){
+    #header {
+        height: 70vh;
+    }
+    #header h1{
+        font-size: x-large;
+    }
+    #header p , #header a{
+        font-size: large;
+    }
+    dl{
+        row-gap: 10px;
+    }
+    .us{
+        height: 100px;
+        top: 300px;
+    }
+    .service h2 , .tour h2{
+        margin: 10px 0;
+    }
+    .us p{
+        display: block;
+        white-space: nowrap;
+        font-size: medium;
+        padding: 15px;
+    }
+    dt:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    dd:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    dt:nth-child(3) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    dd:nth-child(4) {
+        grid-row:2;
+        grid-column: 2;
+    }
+    dt:nth-child(5) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    dd:nth-child(6) {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    dt:nth-child(7) {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    dd:nth-child(8) {
+        grid-row: 4;
+        grid-column: 2;
+    }
+    .tour{
+        display: block;
+    }
+    .tour h2 , .qu h2{
+        text-align: left;
+    }
+
+
+}
+@media only screen and (max-width: 480px){
+    #header {
+        height: 70vh;
+    }
+    #header h1{
+        font-size: x-large;
+    }
+    #header p , header a{
+        font-size:medium;
+    }
+    .us{
+        height: 100px;
+        top: 300px;
+    }
+    .us p{
+        display: block;
+        white-space: nowrap;
+        font-size: medium;
+        padding: 5px;
+    }
+    .service h2 , .tour h2 , .qu h2{
+        font-size: large;
+        margin: 10px 0;
+    }
+    dt:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    dd:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    dt:nth-child(3) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    dd:nth-child(4) {
+        grid-row:2;
+        grid-column: 2;
+    }
+    dt:nth-child(5) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    dd:nth-child(6) {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    dt:nth-child(7) {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    dd:nth-child(8) {
+        grid-row: 4;
+        grid-column: 2;
+    }
+    .service img{
+        width: 70%;
+        height: 70%;
+    }
+    .service dl , .qu dl{
+        margin: 0;
+        gap: 10px;
+    }
+    dd{
+        font-size: small;
+    }
+    dt{
+        font-size: medium;
+    }
+    .tour{
+        display: block;
+        font-size: small;
+    }
+    .tour h3{
+        font-size: 18px;
+    }
+    .tour, .service, .qu{
+        padding: 10px;
+    }
+    .qu dd, .qu dt{
+        padding-bottom: 10px;
+    }
+    .qu h2{
+        padding: 0;
+        text-align: left;
+    }
+
+    .join{
+        font-size: 15px;
+        width: 150px;
+        height: 100px;
+    }
+    footer{
+        height: 100px;
+        font-size: small;
+    }
+    footer h2{
+        margin-top: 10px;
+        font-size: medium;
+    }
+    footer p{
+        font-size: small;
+    }
+}
